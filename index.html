@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderne To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <div id="app-container">
+        <header>
+            <div class="header-content">
+                <h1>Meine Aufgaben</h1>
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" id="dark-mode-checkbox" title="Dark Mode umschalten">
+                    <label for="dark-mode-checkbox"></label>
+                </div>
+            </div>
+        </header>
+        <div id="filter-container">
+            <input type="text" id="filter-input" placeholder="Nach Kategorie filtern...">
+        </div>
+        <form id="task-form">
+            <div class="form-main">
+                <input type="text" id="task-input" placeholder="Was gibt es zu tun?" required>
+                <button type="submit" title="Aufgabe hinzufügen">Hinzufügen</button>
+            </div>
+            <div class="form-details">
+                <input type="text" id="category-input" placeholder="Kategorie (z.B. Arbeit)">
+                <select id="priority-input" title="Priorität auswählen">
+                    <option value="low">Niedrig</option>
+                    <option value="medium" selected>Mittel</option>
+                    <option value="high">Hoch</option>
+                </select>
+                <input type="date" id="duedate-input" title="Fälligkeitsdatum">
+            </div>
+        </form>
+        <main>
+            <ul id="task-list">
+                <!-- Aufgaben werden hier per JavaScript eingefügt -->
+            </ul>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="particle-loader.js"></script>
+</body>
+</html>
