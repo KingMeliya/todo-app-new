@@ -76,5 +76,5 @@ Die Partikel‑Optik lässt sich in `particle-loader.js` über das `configs`‑O
 - Export/Import der Aufgaben (JSON)
 - PWA‑Unterstützung (offline‑fähig, Installierbar)
 
-Viel Spaß beim Organisieren deiner Aufgaben!
+Viel Spaß by KingMeliya
 
